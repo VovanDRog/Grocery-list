@@ -1,0 +1,15 @@
+.button-c {
+  display: inline;
+  padding: 6px 8px;
+  border: none;
+
+  transition: background-color 0.3s;
+
+  &:not(.active) {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

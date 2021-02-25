@@ -1,0 +1,35 @@
+.grocery-item {
+  margin: 5px 0;
+  padding: 10px 0;
+  list-style: none;
+  border-bottom: 1px solid rgb(187, 187, 187);
+  position: relative;
+
+  input {
+    margin-right: 6px;
+  }
+
+  .grocery-name {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    margin: 0 0 6px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .delete-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 22px;
+    width: 22px;
+
+    background: transparent;
+    border: 1px solid #f00;
+    border-radius: 50%;
+    color: #f00;
+  }
+}

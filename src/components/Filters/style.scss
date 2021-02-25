@@ -1,0 +1,18 @@
+.filters {
+  margin-top: 24px;
+
+  button {
+    margin: 0 5px;
+    
+    padding: 8px 12px;
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+
+    &.active {
+      background-color: #6d6d6d;
+      color: #ffff;
+    }
+  }
+}
