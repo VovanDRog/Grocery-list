@@ -46,7 +46,12 @@ function GroceryPage() {
 
         <dt>History </dt>
         {item.history && item.history.length
-          ? item.history.map((date) => <dd>{formatDate(date)}</dd>)
+          ? item.history.map((item) => (
+              <dd key={item.date}>
+                Changed to - {item.status ? "Have" : "Ran out"} - at{" "}
+                {formatDate(item.date)}
+              </dd>
+            ))
           : "It has not changes"}
       </dl>
 

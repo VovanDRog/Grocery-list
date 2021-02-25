@@ -16,7 +16,7 @@ function GroceryItem(props) {
 
   function displayLatestChange() {
     if (history && history.length) {
-      return formatDate(history[history.length-1]);
+      return formatDate(history[history.length-1].date);
     }
     return "It has not changed"
   }

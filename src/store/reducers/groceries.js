@@ -18,7 +18,13 @@ function groceries(state = initialState, action) {
           ? {
               ...item,
               completed: !item.completed,
-              history: [...(item.history || []), new Date()],
+              history: [
+                ...(item.history || []),
+                {
+                  date: new Date(),
+                  status: item.completed
+                },
+              ],
             }
           : item
       );
